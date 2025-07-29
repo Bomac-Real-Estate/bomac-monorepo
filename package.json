@@ -1,0 +1,23 @@
+{
+  "name": "bomac-monorepo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Bomac-Real-Estate/bomac-monorepo.git",
+  "author": "moses mwangi <moses.mwangi.me@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "turbo": "^2.3.3"
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "dev": "turbo run dev"
+  },
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "services/*",
+    "packages/*"
+  ]
+}
